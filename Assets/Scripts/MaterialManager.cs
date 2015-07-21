@@ -25,7 +25,7 @@ public class MaterialManager : MonoBehaviour
         Vector2 framePosition = new Vector2();
         framePosition.x = currentFrame % columns;
         framePosition.y = currentFrame / columns;
-        renderer.sharedMaterial.SetTextureScale("_MainTex", new Vector2(1f / columns, 1f / rows));
-        renderer.sharedMaterial.SetTextureOffset("_MainTex", new Vector2(framePosition.x / columns, 1 - (framePosition.y + 1) / rows));
+        renderer.material.SetTextureScale("_MainTex", new Vector2(1f / columns, 1f / rows));
+        renderer.material.SetTextureOffset("_MainTex", new Vector2(framePosition.x / columns, 1 - (framePosition.y + 1) / rows));
     }
 }
