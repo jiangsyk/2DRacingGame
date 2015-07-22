@@ -35,7 +35,6 @@ public class SpawnController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        print(other.tag);
         if(other.CompareTag("CheckPoint"))
         {
             currentTrackPosition = transform.position;
