@@ -8,6 +8,7 @@ using System.Collections;
  */
 public class Trap : MonoBehaviour
 {
+    public float damage = 3;
     void Start()
     {
 
@@ -21,7 +22,7 @@ public class Trap : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            other.SendMessage("ApplyDamage", damage);
             Destroy(gameObject);
         }
 

@@ -7,14 +7,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6A014F04-92FB-7775-53E1-62609BADB86F}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>4.6.3f1</UnityVersion>
@@ -71,6 +73,39 @@
     <Compile Include="Assets\Plugins\Easy Save 2\Types\ES2_Sprite.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+    <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+    <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+    <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+    <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+    <None Include="Assets\NGUI\ReadMe - 3.6.8.txt" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
     <None Include="Assets\Plugins\Easy Save 2\changelog.txt" />
     <None Include="Assets\Plugins\Easy Save 2\link.xml" />
     <None Include="Assets\Plugins\Easy Save 2\readme.txt" />

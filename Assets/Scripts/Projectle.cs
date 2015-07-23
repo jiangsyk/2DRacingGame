@@ -6,8 +6,9 @@ using System.Collections;
  * Author:      JiangShu
  * Create Time: 2015/7/22 15:32:45
  */
-public class Projectle : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
+    public float damge = 2;
     void Start()
     {
         Destroy(gameObject, 3);
@@ -25,8 +26,8 @@ public class Projectle : MonoBehaviour
         }
         if(other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player"))
         {
+            other.SendMessage("ApplyDamage", damge);
             Destroy(gameObject);
-            Destroy(other.gameObject);
         }
     }
 

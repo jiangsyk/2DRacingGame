@@ -8,14 +8,23 @@ using System.Collections;
  */
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 10f;
-    public float reverseSpeed = 10f;
+    public const float SPEED = 10f;
+    public const float REVERSE_SPEED = 6f;
+
+    public float speed = SPEED;
+    public float reverseSpeed = REVERSE_SPEED;
     public float turnSpeed = .6f;
+
+    public float boostModifier = 1.5f;
+    public float grassModifier = 0.4f;
 
     private float moveDirection;
     private float turnDirection;
 
     public float currentSpeed;
+
+    public bool isGrass;
+    public bool isBoost;
 
     void Start()
     {
@@ -62,4 +71,39 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D.drag = myDrag;
         rigidbody2D.angularDrag = myAngularDrag;
     }
+    public void RefreshSpeed()
+    {
+        speed = SPEED;
+        reverseSpeed = REVERSE_SPEED;
+        if (isBoost)
+        {
+            speed *= boostModifier;
+            reverseSpeed *= boostModifier;
+        }
+        if (isGrass)
+        {
+            speed *= grassModifier;
+            reverseSpeed *= grassModifier;
+        }
+    }
+
+    public void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.CompareTag("Grass"))
+        {
+            isGrass = true;
+            RefreshSpeed();
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Grass"))
+        {
+            isGrass = false;
+            RefreshSpeed();
+        }
+    }
+
+    
 }

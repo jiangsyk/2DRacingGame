@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.2DRacingGame.CSharp.Plugins", "UnityVS.2DRacingGame.CSharp.Plugins.csproj", "{6A014F04-92FB-7775-53E1-62609BADB86F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.2DRacingGame.CSharp", "UnityVS.2DRacingGame.CSharp.csproj", "{0B30A815-D37E-F237-1C98-FA85184D7977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.2DRacingGame.CSharp.Editor", "UnityVS.2DRacingGame.CSharp.Editor.csproj", "{5E1D468C-7FFB-43A8-B548-4EA4F2A5A0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.2DRacingGame.CSharp.Plugins", "UnityVS.2DRacingGame.CSharp.Plugins.csproj", "{6A014F04-92FB-7775-53E1-62609BADB86F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6A014F04-92FB-7775-53E1-62609BADB86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A014F04-92FB-7775-53E1-62609BADB86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A014F04-92FB-7775-53E1-62609BADB86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A014F04-92FB-7775-53E1-62609BADB86F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B30A815-D37E-F237-1C98-FA85184D7977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B30A815-D37E-F237-1C98-FA85184D7977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B30A815-D37E-F237-1C98-FA85184D7977}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B30A815-D37E-F237-1C98-FA85184D7977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1D468C-7FFB-43A8-B548-4EA4F2A5A0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1D468C-7FFB-43A8-B548-4EA4F2A5A0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1D468C-7FFB-43A8-B548-4EA4F2A5A0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1D468C-7FFB-43A8-B548-4EA4F2A5A0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A014F04-92FB-7775-53E1-62609BADB86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A014F04-92FB-7775-53E1-62609BADB86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A014F04-92FB-7775-53E1-62609BADB86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A014F04-92FB-7775-53E1-62609BADB86F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

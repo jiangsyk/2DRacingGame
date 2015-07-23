@@ -35,6 +35,8 @@ public class PlayerProperties : MonoBehaviour
 
     public uint projectileSpeed = 350;
 
+    public float boostLife = 3;
+
     void Start()
     {
         SetPlayerState();
@@ -64,7 +66,11 @@ public class PlayerProperties : MonoBehaviour
         }
         if(hasBoost)
         {
-
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Boost();
+                Normal();
+            }
         }
     }
     void Projectile()
@@ -75,12 +81,27 @@ public class PlayerProperties : MonoBehaviour
     }
     void Trap()
     {
-       Instantiate(trap, trapPos.position, trapPos.rotation);
+        Instantiate(trap, trapPos.position, trapPos.rotation);
     }
     void Boost()
     {
+        GameObject cloneBoost = Instantiate(boost, boostPos.position, boostPos.rotation) as GameObject;
+        cloneBoost.transform.parent = boostPos;
 
+        PlayerMovement movement = GetComponent<PlayerMovement>();
+        movement.isBoost = true;
+        movement.RefreshSpeed();
+
+        Destroy(cloneBoost, boostLife);
+        Invoke("RevertSpeed", boostLife);
     }
+    void RevertSpeed()
+    {
+        PlayerMovement movement = GetComponent<PlayerMovement>();
+        movement.isBoost = false;
+        movement.RefreshSpeed();
+    }
+
     void SetPlayerState()
     {
         switch(playerState)
