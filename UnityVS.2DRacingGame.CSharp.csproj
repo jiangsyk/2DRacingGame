@@ -203,8 +203,11 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\CheckPoint.cs" />
+    <Compile Include="Assets\Scripts\CheckPointController.cs" />
     <Compile Include="Assets\Scripts\DamageController.cs" />
     <Compile Include="Assets\Scripts\DirectionTest.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\HealthController.cs" />
     <Compile Include="Assets\Scripts\MaterialAnimation.cs" />
     <Compile Include="Assets\Scripts\MaterialManager.cs" />
@@ -219,6 +222,7 @@
     <Compile Include="Assets\Scripts\SpeedLapGUI.cs" />
     <Compile Include="Assets\Scripts\SpriteAnimation.cs" />
     <Compile Include="Assets\Scripts\Trap.cs" />
+    <Compile Include="Assets\Scripts\WayPoints.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

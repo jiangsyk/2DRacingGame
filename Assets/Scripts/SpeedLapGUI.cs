@@ -14,15 +14,18 @@ public class SpeedLapGUI : MonoBehaviour
     public UILabel lapLabel;
 
     PlayerMovement movement;
+    CheckPointController checkPointC;
 
     void Start()
     {
         movement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        checkPointC = GameObject.FindGameObjectWithTag("Player").GetComponent<CheckPointController>();
     }
     void Update()
     {
         speed = movement.currentSpeed * 10;
         speedLabel.text = Mathf.Round(speed).ToString();
+        lapLabel.text = checkPointC.currentLap.ToString();
 
     }
 }
